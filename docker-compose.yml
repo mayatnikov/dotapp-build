@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  dotapp1:
+    image: dotapp1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
